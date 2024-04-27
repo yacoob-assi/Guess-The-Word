@@ -1,5 +1,5 @@
 This is a web game called guess the word, you should try to get the correct word with 6 attempts.
-i made it with js,css,html
+i made it by js,css,html
 
 
 

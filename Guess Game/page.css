@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.container {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+button {
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.control {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+}
+button:first-of-type {
+  background-color: orangered;
+  flex: 4;
+}
+
+button:last-of-type {
+  background-color: rgb(2, 102, 2);
+  flex: 1;
+}
+.info {
+  width: 350px;
+}
+
+.infoBox {
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.infoBox::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+.infoBox:first-of-type::before {
+  background-color: green;
+}
+
+.infoBox:nth-of-type(2)::before {
+  background-color: orange;
+}
+
+.infoBox:last-of-type::before {
+  background-color: black;
+}
+
+.game span {
+  font-weight: bold;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.inputsLine {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.game input {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid black;
+  text-align: center;
+  font-size: 40px;
+}
+
+.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.disableWithout {
+  pointer-events: none;
+}
+
+.failed,
+.done {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: orangered;
+}
+
+.truePosition {
+  background-color: green;
+  color: white;
+}
+.falsePosition {
+  background-color: orange;
+  color: white;
+}
+
+.notInclude {
+  background-color: black;
+  color: white;
+}
